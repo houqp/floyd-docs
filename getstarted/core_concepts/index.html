@@ -1,0 +1,1613 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.floydhub.com/getstarted/core_concepts/">
+      
+      
+        <meta name="author" content="FloydHub Team">
+      
+      
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.0">
+    
+    
+      
+        <title>Core Concepts - FloydHub Documentation</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Source+Code+Pro">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Source Code Pro","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/bootstrap_paper.min.css">
+    
+      <link rel="stylesheet" href="../../css/style.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="https://www.floydhub.com" title="FloydHub Documentation" class="md-logo md-header-nav__button">
+            <img src="../../img/f_white_rect_small.png" width="24" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Get Started
+                </span>
+              
+            
+            Core Concepts
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/floydhub/floyd-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <img src="../../img/f_white_rect_small.png">
+      </i>
+    
+    FloydHub Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/floydhub/floyd-docs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Get Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Get Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Core Concepts
+      </label>
+    
+    <a href="./" title="Core Concepts" class="md-nav__link md-nav__link--active">
+      Core Concepts
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projects" title="Projects" class="md-nav__link">
+    Projects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jobs" title="Jobs" class="md-nav__link">
+    Jobs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasets" title="Datasets" class="md-nav__link">
+    Datasets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-keep-datasets-separate-from-code" title="Why keep datasets separate from code?" class="md-nav__link">
+    Why keep datasets separate from code?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-code-and-datasets" title="Connecting code and datasets" class="md-nav__link">
+    Connecting code and datasets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environments" title="Environments" class="md-nav__link">
+    Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../quick_start/" title="Quick Start" class="md-nav__link">
+      Quick Start
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../quick_start_jupyter/" title="Quick Start - Jupyter Notebook" class="md-nav__link">
+      Quick Start - Jupyter Notebook
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get_started/" title="Getting Started Tutorial" class="md-nav__link">
+      Getting Started Tutorial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../get_started_jupyter/" title="Getting Started Tutorial - Jupyter Notebook" class="md-nav__link">
+      Getting Started Tutorial - Jupyter Notebook
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Projects
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Projects
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/basics/create_new/" title="Create a New Project" class="md-nav__link">
+      Create a New Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/basics/delete/" title="Delete a Project" class="md-nav__link">
+      Delete a Project
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Jobs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Jobs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/run_a_job/" title="Run a Job" class="md-nav__link">
+      Run a Job
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/stop_job/" title="Stop a Job" class="md-nav__link">
+      Stop a Job
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/restart_job/" title="Restart a Job" class="md-nav__link">
+      Restart a Job
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/jobs/tensorboard/" title="Enable Tensorboard" class="md-nav__link">
+      Enable Tensorboard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/delete_job/" title="Delete a Job" class="md-nav__link">
+      Delete a Job
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/floyd_ignore/" title="Ignore Files" class="md-nav__link">
+      Ignore Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/ssh/" title="SSH into a Job" class="md-nav__link">
+      SSH into a Job
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faqs/job/" title="Troubleshooting & FAQs" class="md-nav__link">
+      Troubleshooting & FAQs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Data
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/create_and_upload_dataset/" title="Create and Upload a Dataset" class="md-nav__link">
+      Create and Upload a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/delete_dataset/" title="Delete a Dataset" class="md-nav__link">
+      Delete a Dataset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/data/mounting_data/" title="Mount Data to a Job" class="md-nav__link">
+      Mount Data to a Job
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/data/symlink_mounted_data/" title="Symlink Mounted Data" class="md-nav__link">
+      Symlink Mounted Data
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Environments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Environments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/environments/" title="List of Available Environments" class="md-nav__link">
+      List of Available Environments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/jobs/installing_dependencies/" title="Install Extra Dependencies" class="md-nav__link">
+      Install Extra Dependencies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/basics/using_gpu/" title="Using CPU vs GPU" class="md-nav__link">
+      Using CPU vs GPU
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faqs/environments/" title="Troubleshooting & FAQs" class="md-nav__link">
+      Troubleshooting & FAQs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/ssh/" title="SSH into a Job" class="md-nav__link">
+      SSH into a Job
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Output
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Output
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/data/storing_output/" title="Save Output" class="md-nav__link">
+      Save Output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/delete_output/" title="Delete Output" class="md-nav__link">
+      Delete Output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/download_output/" title="Download Saved Output" class="md-nav__link">
+      Download Saved Output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/browse_output/" title="Browse Saved Output" class="md-nav__link">
+      Browse Saved Output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/reusing_output/" title="Using Previous Output in a New Job" class="md-nav__link">
+      Using Previous Output in a New Job
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Floyd CLI
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Floyd CLI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/basics/install/" title="Install Floyd CLI" class="md-nav__link">
+      Install Floyd CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/basics/login/" title="Log In Using Floyd CLI" class="md-nav__link">
+      Log In Using Floyd CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/shortnames/" title="Using Shortened Job and Dataset Names" class="md-nav__link">
+      Using Shortened Job and Dataset Names
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4" checked>
+    
+    <label class="md-nav__link" for="nav-8-4">
+      CLI Commands
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-4">
+        CLI Commands
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/" title="floyd" class="md-nav__link">
+      floyd
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/login/" title="floyd login" class="md-nav__link">
+      floyd login
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/init/" title="floyd init" class="md-nav__link">
+      floyd init
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/run/" title="floyd run" class="md-nav__link">
+      floyd run
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/data/" title="floyd data" class="md-nav__link">
+      floyd data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/logs/" title="floyd logs" class="md-nav__link">
+      floyd logs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/status/" title="floyd status" class="md-nav__link">
+      floyd status
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/output/" title="floyd output" class="md-nav__link">
+      floyd output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/clone/" title="floyd clone" class="md-nav__link">
+      floyd clone
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/info/" title="floyd info" class="md-nav__link">
+      floyd info
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/stop/" title="floyd stop" class="md-nav__link">
+      floyd stop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/delete/" title="floyd delete" class="md-nav__link">
+      floyd delete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/logout/" title="floyd logout" class="md-nav__link">
+      floyd logout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/upgrade/" title="floyd upgrade" class="md-nav__link">
+      floyd upgrade
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/version/" title="floyd version" class="md-nav__link">
+      floyd version
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../commands/restart/" title="floyd restart" class="md-nav__link">
+      floyd restart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Examples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../examples/style_transfer/" title="Style Transfer" class="md-nav__link">
+      Style Transfer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../examples/deep_corrector/" title="Deep Text Corrector" class="md-nav__link">
+      Deep Text Corrector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../examples/dcgan/" title="Deep Convolutional Generative Adversarial Networks" class="md-nav__link">
+      Deep Convolutional Generative Adversarial Networks
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Videos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Videos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../videos/videos/" title="Lightning Videos" class="md-nav__link">
+      Lightning Videos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Troubleshooting & FAQs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Troubleshooting & FAQs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faqs/installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faqs/authentication/" title="Signup and Login" class="md-nav__link">
+      Signup and Login
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faqs/job/" title="Job" class="md-nav__link">
+      Job
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faqs/plans/" title="Plans" class="md-nav__link">
+      Plans
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faqs/billing/" title="Billing" class="md-nav__link">
+      Billing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+      
+      
+      
+
+
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projects" title="Projects" class="md-nav__link">
+    Projects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jobs" title="Jobs" class="md-nav__link">
+    Jobs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasets" title="Datasets" class="md-nav__link">
+    Datasets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-keep-datasets-separate-from-code" title="Why keep datasets separate from code?" class="md-nav__link">
+    Why keep datasets separate from code?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-code-and-datasets" title="Connecting code and datasets" class="md-nav__link">
+    Connecting code and datasets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environments" title="Environments" class="md-nav__link">
+    Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" title="Output" class="md-nav__link">
+    Output
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/floydhub/floyd-docs/edit/master/docs/getstarted/core_concepts.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                <h1 id="core-concepts">Core Concepts<a class="headerlink" href="#core-concepts" title="Permanent link">&para;</a></h1>
+<p>The essential points for understanding and effectively using FloydHub can be
+grouped into the following categories:</p>
+<ul>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#jobs">Jobs</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#environments">Environments</a></li>
+<li><a href="#output">Output</a></li>
+</ul>
+<p>This document serves as an introduction to each of these categories. When
+you're ready to dive deeper, each category has its own section in our
+documentation that you can explore.</p>
+<h2 id="projects">Projects<a class="headerlink" href="#projects" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Quick Look</p>
+<p>A project is a group of <a href="">jobs</a> aimed at accomplishing the same goal. A
+project keeps track of each job, along with its <a href="#output">output</a> and logs.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Key Points of Understanding</p>
+<ul>
+<li><a href="../../guides/basics/create_new">Creating a project</a></li>
+</ul>
+</div>
+<p>The project is the most central construct of the FloydHub platform.
+Understanding what a project is on FloydHub isn't too difficult because it
+directly correlates with what you'd think of as a deep learning project outside
+of FloydHub: You have a problem you need to solve with a deep learning model.
+You get on your computer, create a new directory with a name like <code class="codehilite">mnist-cnn</code>
+and boom, you've started a new project. In that directory, you'll write some
+code, run some experiments, and iterate until you have created a deep learning
+model that meets your needs.</p>
+<p>On FloydHub, a project is a collection of all the work and iterations you
+perform when developing a deep learning model. In contrast to a typical deep
+learning workflow, your experiments and iterations (we call them
+<a href="#jobs">jobs</a>) will be versioned and kept organized for you to reference in the
+future.</p>
+<h2 id="jobs">Jobs<a class="headerlink" href="#jobs" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Quick Look</p>
+<p>A job is an execution of your code on FloydHub's deep-learning servers.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Key Points of Understanding</p>
+<ul>
+<li><a href="../../../guides/run_a_job">Running a job</a></li>
+</ul>
+</div>
+<p>A job is what pulls together your <a href="">code</a> and <a href="">dataset(s)</a>, sends them to a
+deep-learning server configured with the right <a href="">environment</a>, and
+actually kicks off the necessary code to get the data science done.</p>
+<p>After a job is completed, you'll be able to go back and reference/review it on
+floydhub.com. For each job, you'll be able to see:</p>
+<ol>
+<li>A snapshot of the code used for the job</li>
+<li>A record of which <a href="">Dataset(s)</a> you used for the job</li>
+<li>A record of what <a href="">Environment</a> was used for the job</li>
+<li>The <a href="">Output</a> and logs of the job</li>
+</ol>
+<p>You run jobs using Floyd CLI's <code class="codehilite">floyd run</code> command. The command has various
+flags and parameters that let you customize how the job runs: What dataset do
+you want to use? Where should the dataset be mounted on the server? What
+environment do you want to use? Should the server run your job using a CPU or a
+GPU? What command(s) should the server use to run your code? Any other commands
+you'd like to run on the server to set it up before running your job? Etc.</p>
+<h2 id="datasets">Datasets<a class="headerlink" href="#datasets" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Quick Look</p>
+<p>Datasets are securely uploaded to FloydHub. They are versioned and can be
+attached to any job.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Key Points of Understanding</p>
+<ul>
+<li><a href="../../guides/create_and_upload_dataset">How to upload a dataset</a></li>
+<li><a href="../../guides/data/mounting_data">How to attach, or "mount", a dataset to a job so your code can use it</a></li>
+<li><a href="#connecting-code-and-datasets">Making sure your code references your data in the correct location</a></li>
+</ul>
+</div>
+<p>FloydHub's dataset workflow is one of two things that tend to feel a bit
+foreign to users who are used to local development (the other being
+<a href="">output</a>). When working on your local machine, you might have your dataset in
+the same directory as your code, or in a directory where you keep many
+different datasets. When using FloydHub, datasets are always kept separate from
+code.</p>
+<h3 id="why-keep-datasets-separate-from-code">Why keep datasets separate from code?<a class="headerlink" href="#why-keep-datasets-separate-from-code" title="Permanent link">&para;</a></h3>
+<p>As a data scientist you tweak your code often during the process of creating a
+deep-learning model. However, you don't change the underlying data nearly
+as often, if at all.</p>
+<p>Each time you run a job on FloydHub, a copy of your code is uploaded to
+FloydHub and run on one of FloydHub's powerful deep-learning servers. Because
+your data isn't changing from job to job, it wouldn't make sense to keep your
+data with your code and upload it with each job. Instead, we upload a dataset
+once, and attach, or "mount", it to each job. This saves a significant amount
+of time on each job.</p>
+<p>Beyond that, keeping data separate from code allows you to collaborate more
+easily with others. A dataset can be used by any user who has access to it, so
+teams and communities can work on solving problems together using the same
+underlying data.</p>
+<h3 id="connecting-code-and-datasets">Connecting code and datasets<a class="headerlink" href="#connecting-code-and-datasets" title="Permanent link">&para;</a></h3>
+<p>You'll still be writing your code locally when using FloydHub, but when you run
+a job, your code will be uploaded to FloydHub and executed on a powerful
+deep-learning server that has your datasets mounted to it.</p>
+<p>You can specify the places where your datasets will be
+<a href="../../guides/data/mounting_data">mounted</a> on the server, but you'll have to make
+sure that your code references your datasets with the file paths of the data on
+the <em>server</em>, not where you might have them locally.</p>
+<h2 id="environments">Environments<a class="headerlink" href="#environments" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Quick Look</p>
+<p>An environment is what defines the software packages that will be available
+to your code during a job</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Key Points of Understanding</p>
+<ul>
+<li><a href="../../guides/data/storing_output">How to select an environment for your job</a></li>
+<li><a href="../../guides/reusing_output">How to customize your environment</a></li>
+</ul>
+</div>
+<p>FloydHub has a bunch of different <a href="../../guides/environments">deep learning environments to choose
+from</a>. When you run a job on FloydHub, you'll be able
+to specify the environment you want use, straight from the command line. You'll
+also be able to specify whether you want the job run using a <a href="../../guides/basics/using_gpu">GPU or a
+CPU</a>.</p>
+<p>If FloydHub's stock deep learning environments don't meet your needs, you can
+create a custom environment for your job. See <a href="../../guides/jobs/installing_dependencies">this
+guide</a> for instructions on that.</p>
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Quick Look</p>
+<p>Output is any data, logs, or files from a job you want to save for future
+reference and use.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Key Points of Understanding</p>
+<ul>
+<li><a href="../../guides/data/storing_output">How to capture/save output from a job</a></li>
+<li><a href="../../guides/reusing_output">How to use it again in a future job</a></li>
+</ul>
+</div>
+<p>Output is anything from a job that you want to save for future use. The most
+common form of output is model checkpoints (the weights and biases of your
+model) that you developed during a job. If you save these checkpoints (or
+anything else you'd like to preserve) during a job, you'll have them to
+reference, download, and reuse in the future.</p>
+<p>Output is the way that you can link jobs together: You run a job to test an
+idea you have. If it works, you may want to start where you left off and run
+another job. If going down that path leads to a dead end, you may want to go
+back to a previous output and start again from there. Knowing how to store
+output is key to optimizing your deep learning workflow.</p>
+<p><a href="../../guides/data/storing_output">Saving</a> and <a href="../../guides/reusing_output">reusing</a>
+output on FloydHub can feel foriegn to users who are used to working on their
+own machines. But once you learn how to do it, it becomes very simple and is
+one of the most valuable parts of the FloydHub workflow.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../quick_start/" title="Quick Start" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Quick Start
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 FloydHub
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/floydhub" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/floydhub_" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-1d6ee6ee6c.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-90905407-1","floydhub.com"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

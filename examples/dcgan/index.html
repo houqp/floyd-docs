@@ -370,6 +370,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/insights/" title="Insights" class="md-nav__link">
+      Insights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/run_on_floydhub_button/" title="Run on FloydHub Button" class="md-nav__link">
+      Run on FloydHub Button
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1051,18 +1075,30 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../../floyd_config/" title="Floyd Config File" class="md-nav__link">
+      Floyd Config File
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
-    <label class="md-nav__link" for="nav-10">
+    <label class="md-nav__link" for="nav-11">
       Examples
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-10">
+      <label class="md-nav__title" for="nav-11">
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1217,13 +1253,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
     
-    <label class="md-nav__link" for="nav-11">
+    <label class="md-nav__link" for="nav-12">
       Videos
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-11">
+      <label class="md-nav__title" for="nav-12">
         Videos
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1253,13 +1289,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Troubleshooting & FAQs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Troubleshooting & FAQs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1576,18 +1612,18 @@ contribute with new ideas.</p>
 <h2 id="evaluate-pre-trained-models">Evaluate pre-trained models<a class="headerlink" href="#evaluate-pre-trained-models" title="Permanent link">&para;</a></h2>
 <p>If you want to try out a pre-trained model, FloydHub has a public dataset model
 with the checkpoints (300 epochs training) for this located <a href="https://www.floydhub.com/redeipirati/datasets/dcgan-300-epochs-models/1">here</a>. You can mount it with
-<code class="codehilite">--data redeipirati/datasets/dcgan-300-epochs-models/1:/model</code>.</p>
+<code class="codehilite">--data redeipirati/datasets/dcgan-300-epochs-models/1:model</code>.</p>
 <div class="codehilite"><pre><span></span>floyd run <span class="se">\</span>
 --gpu <span class="se">\</span>
 --env pytorch-0.2 <span class="se">\</span>
---data redeipirati/datasets/dcgan-300-epochs-models/1:/model <span class="se">\</span>
+--data redeipirati/datasets/dcgan-300-epochs-models/1:model <span class="se">\</span>
 <span class="s2">&quot;python generate.py --netG /model/netG_epoch_299.pth --ngpu 1 --cuda&quot;</span>
 </pre></div>
 
 <p>This model should perform better compared to the previous one. You can also provide the <code class="codehilite">--Zvector</code> parameter to explore the latent Z vector landscape. We have also provided to you the zvector used for evaluating our model in the attached dataset:</p>
 <div class="codehilite"><pre><span></span>floyd run --gpu <span class="se">\</span>
 --env pytorch-0.2  <span class="se">\</span>
---data redeipirati/datasets/dcgan-300-epochs-models/1:/model <span class="se">\</span>
+--data redeipirati/datasets/dcgan-300-epochs-models/1:model <span class="se">\</span>
 <span class="s2">&quot;python generate.py --netG /model/netG_epoch_299.pth --Zvector /model/zvector.pth --ngpu 1 --cuda&quot;</span>
 </pre></div>
 

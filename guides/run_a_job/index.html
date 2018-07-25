@@ -370,6 +370,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../insights/" title="Insights" class="md-nav__link">
+      Insights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../run_on_floydhub_button/" title="Run on FloydHub Button" class="md-nav__link">
+      Run on FloydHub Button
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -524,6 +548,13 @@
           <li class="md-nav__item">
   <a href="#tensorboard" title="Tensorboard" class="md-nav__link">
     Tensorboard
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maximum-runtime" title="Maximum Runtime" class="md-nav__link">
+    Maximum Runtime
   </a>
   
 </li>
@@ -1202,15 +1233,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../../floyd_config/" title="Floyd Config File" class="md-nav__link">
+      Floyd Config File
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
-    <label class="md-nav__link" for="nav-10">
+    <label class="md-nav__link" for="nav-11">
       Examples
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-10">
+      <label class="md-nav__title" for="nav-11">
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1264,13 +1307,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
     
-    <label class="md-nav__link" for="nav-11">
+    <label class="md-nav__link" for="nav-12">
       Videos
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-11">
+      <label class="md-nav__title" for="nav-12">
         Videos
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1300,13 +1343,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Troubleshooting & FAQs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Troubleshooting & FAQs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1527,6 +1570,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#maximum-runtime" title="Maximum Runtime" class="md-nav__link">
+    Maximum Runtime
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1576,6 +1626,7 @@
 <li><a href="#environment">Environment</a>: <code class="codehilite">--env &lt;environment_name&gt;</code></li>
 <li><a href="#message">Message</a> <code class="codehilite">--message</code> <strong>or</strong> <code class="codehilite">-m</code></li>
 <li><a href="#tensorboard">Tensorboard</a>: <code class="codehilite">--tensorboard</code></li>
+<li><a href="#maximum-runtime">Maximum Runtime</a>: <code class="codehilite">--max-runtime</code> <strong>or</strong> <code class="codehilite">-r</code></li>
 </ul>
 <p><strong><a href="#command_1">[COMMAND]</a></strong></p>
 </div>
@@ -1597,6 +1648,7 @@ quick reference.</p>
 <li><a href="#environment">Environment</a>: <code class="codehilite">--env</code></li>
 <li><a href="#message">Message</a> <code class="codehilite">--message</code> <strong>or</strong> <code class="codehilite">-m</code></li>
 <li><a href="#tensorboard">Tensorboard</a>: <code class="codehilite">--tensorboard</code></li>
+<li><a href="#maximum-runtime">Maximum Runtime</a>: <code class="codehilite">--max-runtime</code> <strong>or</strong> <code class="codehilite">-r</code></li>
 </ul>
 <h3 id="command"><a href="#command_1">[COMMAND]</a><a class="headerlink" href="#command" title="Permanent link">&para;</a></h3>
 <h2 id="options_1">[OPTIONS]<a class="headerlink" href="#options_1" title="Permanent link">&para;</a></h2>
@@ -1686,6 +1738,13 @@ available. If you don't want your browser to automatcially open, pass the <code 
    is running. For details on how to do that, see <a href="../../guides/ssh">this article</a></li>
 </ol>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you're working with Jupyter Notebooks, then we suggest using a Workspace
+instead of a Jupyter mode job. A workspace provides an better experience for
+interactively developing your models on FloydHub. To learn more about Workspaces,
+you can see <a href="../../guides/workspace">this article</a></p>
+</div>
 <h4 id="-mode-serve"><code class="codehilite">--mode serve</code><a class="headerlink" href="#-mode-serve" title="Permanent link">&para;</a></h4>
 <p>This mode is for serving your deep learning models as an API endpoint. To use
 serve mode, you'll need to make sure your project's code meets a few
@@ -1753,6 +1812,13 @@ To view logs enter:
 <img alt="Job Message on Project Detail Page" src="../../img/project_detail_job_message.jpg" /></p>
 <h3 id="tensorboard">Tensorboard<a class="headerlink" href="#tensorboard" title="Permanent link">&para;</a></h3>
 <p>The <code class="codehilite">--tensorboard</code> flag allows you to enable Tensorboard on your job. For more details, see <a href="../../guides/jobs/tensorboard">this article</a>.</p>
+<h3 id="maximum-runtime">Maximum Runtime<a class="headerlink" href="#maximum-runtime" title="Permanent link">&para;</a></h3>
+<p>The <code class="codehilite">--max-runtime</code> flag lets you set a maximum runtime duration for your job. If a running job 
+exceeds its maximum runtime, FloydHub will stop the job and save any output that was 
+generated until that point.</p>
+<p>This feature is very useful if you want to set an upper bound to the duration of a job. This 
+will also act as a safety in case you forget to turn off your jupyter notebook job.</p>
+<p>Currently there is no option to change this duration once it set at the start of the job.</p>
 <h2 id="command_1">[COMMAND]<a class="headerlink" href="#command_1" title="Permanent link">&para;</a></h2>
 <p>The <code class="codehilite">[COMMAND]</code> portion of <code class="codehilite">floyd run</code> is the command that will be executed on
 the server when your job begins. It will be run in the directory on the server
@@ -1830,7 +1896,7 @@ do not take a <code class="codehilite">[COMMAND]</code>. You'll kick off your jo
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../workspace/" title="Workspace" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../run_on_floydhub_button/" title="Run on FloydHub Button" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1839,7 +1905,7 @@ do not take a <code class="codehilite">[COMMAND]</code>. You'll kick off your jo
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Workspace
+                Run on FloydHub Button
               </span>
             </div>
           </a>

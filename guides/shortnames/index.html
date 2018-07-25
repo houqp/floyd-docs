@@ -370,6 +370,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../insights/" title="Insights" class="md-nav__link">
+      Insights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../run_on_floydhub_button/" title="Run on FloydHub Button" class="md-nav__link">
+      Run on FloydHub Button
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1107,15 +1131,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../../floyd_config/" title="Floyd Config File" class="md-nav__link">
+      Floyd Config File
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
-    <label class="md-nav__link" for="nav-10">
+    <label class="md-nav__link" for="nav-11">
       Examples
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-10">
+      <label class="md-nav__title" for="nav-11">
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1169,13 +1205,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
     
-    <label class="md-nav__link" for="nav-11">
+    <label class="md-nav__link" for="nav-12">
       Videos
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-11">
+      <label class="md-nav__title" for="nav-12">
         Videos
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1205,13 +1241,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Troubleshooting & FAQs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Troubleshooting & FAQs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1484,9 +1520,9 @@ in it (otherwise the <code class="codehilite">floyd run</code> command would not
 called <code class="codehilite">hello</code> that belongs to the current user. We want the most recent
 version of the dataset (which we'll say is <code class="codehilite">2</code>), so we don't specify the
 version number.</p>
-<p><div class="codehilite"><pre><span></span>$ floyd run --data my_dataset:/model <span class="s1">&#39;python train.py&#39;</span>
+<p><div class="codehilite"><pre><span></span>$ floyd run --data my_dataset:model <span class="s1">&#39;python train.py&#39;</span>
 </pre></div>
-<div class="codehilite"><pre><span></span>$ floyd run --data fooster/datasets/hello/2:/model <span class="s1">&#39;python train.py&#39;</span>
+<div class="codehilite"><pre><span></span>$ floyd run --data fooster/datasets/hello/2:model <span class="s1">&#39;python train.py&#39;</span>
 </pre></div></p>
 <h2 id="output-name-examples">Output Name Examples<a class="headerlink" href="#output-name-examples" title="Permanent link">&para;</a></h2>
 <p>When referring to the output of a job, you'll need to be sure to tack <code class="codehilite">/output</code>
@@ -1495,9 +1531,9 @@ job's output, and not the job itself. In the examples below, We'll assume that
 our username is <code class="codehilite">fooster</code> and that we have a project named <code class="codehilite">my_project</code>
 initialized in the current directory. Here are a couple examples:</p>
 <p>Below, we want to mount the output of <code class="codehilite">fooster/projects/my_project/3/output</code> at <code class="codehilite">/model</code>:</p>
-<p><div class="codehilite"><pre><span></span>$ floyd run --data <span class="m">3</span>/output:/model <span class="s1">&#39;python eval.py&#39;</span>
+<p><div class="codehilite"><pre><span></span>$ floyd run --data <span class="m">3</span>/output:model <span class="s1">&#39;python eval.py&#39;</span>
 </pre></div>
-<div class="codehilite"><pre><span></span>$ floyd run --data fooster/projects/my_project/3/output:/model <span class="s1">&#39;python eval.py&#39;</span>
+<div class="codehilite"><pre><span></span>$ floyd run --data fooster/projects/my_project/3/output:model <span class="s1">&#39;python eval.py&#39;</span>
 </pre></div></p>
 <p>Here we clone the output of job number 1 of our current project:</p>
 <p><div class="codehilite"><pre><span></span>$ floyd data clone <span class="m">1</span>/output

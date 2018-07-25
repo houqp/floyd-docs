@@ -268,6 +268,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#workspaces" title="Workspaces" class="md-nav__link">
+    Workspaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#jobs" title="Jobs" class="md-nav__link">
     Jobs
   </a>
@@ -452,6 +459,30 @@
   <li class="md-nav__item">
     <a href="../../guides/workspace/" title="Workspace" class="md-nav__link">
       Workspace
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/insights/" title="Insights" class="md-nav__link">
+      Insights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/run_on_floydhub_button/" title="Run on FloydHub Button" class="md-nav__link">
+      Run on FloydHub Button
     </a>
   </li>
 
@@ -1138,15 +1169,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../../floyd_config/" title="Floyd Config File" class="md-nav__link">
+      Floyd Config File
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
-    <label class="md-nav__link" for="nav-10">
+    <label class="md-nav__link" for="nav-11">
       Examples
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-10">
+      <label class="md-nav__title" for="nav-11">
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1200,13 +1243,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
     
-    <label class="md-nav__link" for="nav-11">
+    <label class="md-nav__link" for="nav-12">
       Videos
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-11">
+      <label class="md-nav__title" for="nav-12">
         Videos
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1236,13 +1279,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Troubleshooting & FAQs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Troubleshooting & FAQs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1369,6 +1412,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#workspaces" title="Workspaces" class="md-nav__link">
+    Workspaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#jobs" title="Jobs" class="md-nav__link">
     Jobs
   </a>
@@ -1438,6 +1488,7 @@
 grouped into the following categories:</p>
 <ul>
 <li><a href="#projects">Projects</a></li>
+<li><a href="#workspaces">Workspaces</a></li>
 <li><a href="#jobs">Jobs</a></li>
 <li><a href="#datasets">Datasets</a></li>
 <li><a href="#environments">Environments</a></li>
@@ -1449,8 +1500,9 @@ documentation that you can explore.</p>
 <h2 id="projects">Projects<a class="headerlink" href="#projects" title="Permanent link">&para;</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Quick Look</p>
-<p>A project is a group of <a href="">jobs</a> aimed at accomplishing the same goal. A
-project keeps track of each job, along with its <a href="#output">output</a> and logs.</p>
+<p>A project is a group of jobs and workspaces aimed at accomplishing the same goal. A
+project keeps track of each job, along with its <a href="#output">output</a> and logs. It also 
+tracks your workspaces.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Key Points of Understanding</p>
@@ -1468,9 +1520,26 @@ code, run some experiments, and iterate until you have created a deep learning
 model that meets your needs.</p>
 <p>On FloydHub, a project is a collection of all the work and iterations you
 perform when developing a deep learning model. In contrast to a typical deep
-learning workflow, your experiments and iterations (we call them
+learning workflow, your experiments and training iterations (we call them
 <a href="#jobs">jobs</a>) will be versioned and kept organized for you to reference in the
-future.</p>
+future. Workspaces provide interactive environments for you to prepare your 
+training jobs, including pre-processing, data exploration, and other activities.</p>
+<h2 id="workspaces">Workspaces<a class="headerlink" href="#workspaces" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Quick Look</p>
+<p>A workspace is an interative development environment on FloydHub for model
+development, pre-processing data, and other steps in your deep learning
+workflow. <img alt="Workspace UI" src="../../img/workspace/workspace_ui.png" /></p>
+</div>
+<p>A workspace is a data-oriented cloud IDE (based on JupyterLab) built for deep 
+learning and machine learning tasks. When you create a workspace, you'll select
+the environment  and machine you'd like to use for your work. Once inside a 
+workspace, you can easily attach FloydHub datasets, open up a terminal, or 
+even restart your workspace with a different configuration (like switching 
+from a CPU machine to a GPU machine)</p>
+<p>You can create a workspace within a Project by clicking the "Create Workspace"
+button. You'll be able to create a blank workspace or import code from a public
+GitHub repository to bootstrap your workspace.</p>
 <h2 id="jobs">Jobs<a class="headerlink" href="#jobs" title="Permanent link">&para;</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Quick Look</p>

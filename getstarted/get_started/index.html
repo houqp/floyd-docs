@@ -376,8 +376,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#-data-mckaydatasetsmnist1mnist" title="--data mckay/datasets/mnist/1:/mnist" class="md-nav__link">
-    --data mckay/datasets/mnist/1:/mnist
+  <a href="#-data-mckaydatasetsmnist1mnist" title="--data mckay/datasets/mnist/1:mnist" class="md-nav__link">
+    --data mckay/datasets/mnist/1:mnist
   </a>
   
 </li>
@@ -564,6 +564,30 @@
   <li class="md-nav__item">
     <a href="../../guides/workspace/" title="Workspace" class="md-nav__link">
       Workspace
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/insights/" title="Insights" class="md-nav__link">
+      Insights
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/run_on_floydhub_button/" title="Run on FloydHub Button" class="md-nav__link">
+      Run on FloydHub Button
     </a>
   </li>
 
@@ -1250,15 +1274,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../../floyd_config/" title="Floyd Config File" class="md-nav__link">
+      Floyd Config File
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
-    <label class="md-nav__link" for="nav-10">
+    <label class="md-nav__link" for="nav-11">
       Examples
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-10">
+      <label class="md-nav__title" for="nav-11">
         Examples
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1312,13 +1348,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
     
-    <label class="md-nav__link" for="nav-11">
+    <label class="md-nav__link" for="nav-12">
       Videos
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-11">
+      <label class="md-nav__title" for="nav-12">
         Videos
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1348,13 +1384,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Troubleshooting & FAQs
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Troubleshooting & FAQs
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1555,8 +1591,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#-data-mckaydatasetsmnist1mnist" title="--data mckay/datasets/mnist/1:/mnist" class="md-nav__link">
-    --data mckay/datasets/mnist/1:/mnist
+  <a href="#-data-mckaydatasetsmnist1mnist" title="--data mckay/datasets/mnist/1:mnist" class="md-nav__link">
+    --data mckay/datasets/mnist/1:mnist
   </a>
   
 </li>
@@ -1683,12 +1719,11 @@ documentation</a>.</p>
 be grouped under this project, and we'll be able to go back and review each job
 later. For more information about projects, check out our <a href="../../getstarted/core_concepts/#projects">Core Concepts
 page</a>.</p>
-<p>To create the project, visit <a href=""><a href="http://www.floydhub.com/projects">www.floydhub.com/projects</a></a>, and click the
-<code class="codehilite">New Project</code> button in the top right corner of the screen. Complete the form
-to create a new project. (Note that private projects are only available on our
+<p>To create a new project project click the <code class="codehilite">+</code> button in the top bar on FloydHub 
+dashboard. Select <code class="codehilite">New Project</code> and complete the form to create a new project. 
+(Note that private projects are only available on our
 <a href="https://www.floydhub.com/pricing">Data Scientist Plans</a>.)</p>
-<p>If you're a new user, then you should already see a default project named
-<code class="codehilite">quick-start</code> in your <a href="https://www.floydhub.com/projects">projects dashboard</a>. If you don't see it, go ahead and create a project named 'quick-start'.</p>
+<p><img alt="create jupyter notebook" src="../../img/create_quick_start_project.jpg" /></p>
 <p>When you visit <a href=""><a href="http://www.floydhub.com/projects">www.floydhub.com/projects</a></a> you should see your quick-start
 project, as shown below:</p>
 <p><img alt="Quick start project" src="../../img/quick_start_project.jpg" /></p>
@@ -1758,7 +1793,7 @@ we use the <code class="codehilite">floyd run</code> command.</p>
 each piece of the command.)</p>
 <div class="codehilite"><pre><span></span>$ floyd run <span class="se">\</span>
 --gpu <span class="se">\</span>
---data mckay/datasets/mnist/1:/mnist <span class="se">\</span>
+--data mckay/datasets/mnist/1:mnist <span class="se">\</span>
 --env tensorflow-1.3 <span class="se">\</span>
 <span class="s2">&quot;python train.py&quot;</span>
 
@@ -1792,16 +1827,16 @@ jobs. <a href="../../../guides/run_a_job/#instance-type">More info here</a>.</p>
 <h3 id="-gpu">--gpu<a class="headerlink" href="#-gpu" title="Permanent link">&para;</a></h3>
 <p>Specifies that we want our job run on a GPU server. More info
 on instance types <a href="../../../guides/run_a_job/#instance-type">here</a>.</p>
-<h3 id="-data-mckaydatasetsmnist1mnist">--data mckay/datasets/mnist/1:/mnist<a class="headerlink" href="#-data-mckaydatasetsmnist1mnist" title="Permanent link">&para;</a></h3>
+<h3 id="-data-mckaydatasetsmnist1mnist">--data mckay/datasets/mnist/1:mnist<a class="headerlink" href="#-data-mckaydatasetsmnist1mnist" title="Permanent link">&para;</a></h3>
 <p>The <code class="codehilite">train.py</code> script expects the <a href="https://www.floydhub.com/mckay/datasets/mnist/1">MNIST
 data</a> to be located at
-<code class="codehilite">/mnist</code> on the computer where the script runs. We can use the <code class="codehilite">--data</code> flag to
-ensure that our dataset is available to our code at <code class="codehilite">/mnist</code>.</p>
+<code class="codehilite">/floyd/input/mnist</code> or <code class="codehilite"><span class="cp">../input/mnist</span></code> on the computer where the script runs. We can use the <code class="codehilite">--data</code> flag to
+ensure that our dataset is available to our code at <code class="codehilite">/floyd/input/mnist</code>.</p>
 <p>We pass the <code class="codehilite">--data</code> flag the name of our dataset (<code class="codehilite">mckay/datasets/mnist/1</code>)
 and the location on the server where we want our dataset to be available
-(<code class="codehilite">/mnist</code>), separated by a colon (<code class="codehilite">:</code>).</p>
+(<code class="codehilite">/floyd/input/mnist</code>), separated by a colon (<code class="codehilite">:</code>).</p>
 <p>Putting that all together, we get:</p>
-<div class="codehilite"><pre><span></span>--data mckay/datasets/mnist/1:/mnist
+<div class="codehilite"><pre><span></span>--data mckay/datasets/mnist/1:mnist
 </pre></div>
 
 <p>We have an entire article in our docs about mounting datasets to your jobs.
@@ -1886,7 +1921,7 @@ model in the next section.</p>
 <p>Output from previous jobs can be attached to a new job using the same approach
 as mounting a dataset. We just use the name of the output instead of the name
 of a dataset when we use the <code class="codehilite">--data</code> flag:</p>
-<div class="codehilite"><pre><span></span>--data mckay/projects/quick-start/1/output:/model
+<div class="codehilite"><pre><span></span>--data mckay/projects/quick-start/1/output:model
 </pre></div>
 
 <p>Notice that we specify <code class="codehilite">/model</code> as the mountpoint because we know our
@@ -1895,14 +1930,15 @@ evaluation script expects our model to be at <code class="codehilite">/model</co
 <a href="../../../guides/reusing_output">this article</a></p>
 <h3 id="run-your-second-job">Run Your Second Job<a class="headerlink" href="#run-your-second-job" title="Permanent link">&para;</a></h3>
 <p>Follow this command to run your second job. Note that we are mounting our
-dataset again at <code class="codehilite">/mnist</code> and also mounting our model at <code class="codehilite">/model</code>. Be sure to
-replace <code class="codehilite">mckay/projects/quick-start/1/output</code> with the name of the output you
-want to mount (something like <code class="codehilite">&lt;username&gt;/projects/quick-start/&lt;run_number&gt;/output</code>)</p>
+dataset again at <code class="codehilite">/floyd/input/mnist</code> and also mounting our model at
+<code class="codehilite">/floyd/input/model</code>. Be sure to replace <code class="codehilite">mckay/projects/quick-start/1/output</code>
+with the name of the output you want to mount (something like
+<code class="codehilite">&lt;username&gt;/projects/quick-start/&lt;run_number&gt;/output</code>)</p>
 <div class="codehilite"><pre><span></span><span class="n">$</span><span class="w"> </span><span class="n">floyd</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">\</span><span class="w"></span>
 <span class="o">--</span><span class="n">gpu</span><span class="w"> </span><span class="n">\</span><span class="w"></span>
 <span class="o">--</span><span class="n">env</span><span class="w"> </span><span class="n">tensorflow-1</span><span class="o">.</span><span class="mi">3</span><span class="w"> </span><span class="n">\</span><span class="w"></span>
-<span class="o">--</span><span class="n">data</span><span class="w"> </span><span class="n">mckay/datasets/mnist/1</span><span class="err">:</span><span class="o">/</span><span class="n">mnist</span><span class="w"> </span><span class="n">\</span><span class="w"></span>
-<span class="o">--</span><span class="n">data</span><span class="w"> </span><span class="n">mckay/projects/quick-start/1/output</span><span class="err">:</span><span class="o">/</span><span class="n">model</span><span class="w"> </span><span class="n">\</span><span class="w"></span>
+<span class="o">--</span><span class="n">data</span><span class="w"> </span><span class="n">mckay/datasets/mnist/1</span><span class="err">:</span><span class="n">mnist</span><span class="w"> </span><span class="n">\</span><span class="w"></span>
+<span class="o">--</span><span class="n">data</span><span class="w"> </span><span class="n">mckay/projects/quick-start/1/output</span><span class="err">:</span><span class="n">model</span><span class="w"> </span><span class="n">\</span><span class="w"></span>
 <span class="s">&#39;python eval.py&#39;</span><span class="w"></span>
 
 <span class="n">Creating</span><span class="w"> </span><span class="n">project</span><span class="w"> </span><span class="n">run</span><span class="o">.</span><span class="w"> </span><span class="n">Total</span><span class="w"> </span><span class="n">upload</span><span class="w"> </span><span class="n">size</span><span class="err">:</span><span class="w"> </span><span class="mf">26.3</span><span class="n">KiB</span><span class="w"></span>
